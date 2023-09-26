@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/bonezegei-dashboard.css" />
+    <link rel="stylesheet" href="resources/font/googleapis.css" />
+  </head>
+
+  <body>
+    <!--Nav Bar-->
+    <nav>
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+          "
+        >
+          <a class="btn" href="#">
+            <span class="material-icons-sharp"> menu </span>
+          </a>
+          <p style="font-weight: bold">Logo</p>
+        </div>
+
+        <div style="display: flex">
+          <a class="btn" href="#">
+            <span class="material-icons-sharp"> terminal </span>
+            <span class="hint">Terminal</span>
+          </a>
+          <a class="btn">
+            <span class="material-icons-sharp"> grain </span>
+            <span class="hint">Diagram</span>
+          </a>
+          <a class="btn">
+            <span class="material-icons-sharp"> school </span>
+            <span class="hint">scholar</span>
+          </a>
+          <a class="btn">
+            <span class="material-icons-sharp"> wifi </span>
+            <span class="hint">Devices</span>
+          </a>
+          <a class="logo img" onclick="clickProfile()"
+            ><img src="resources/images/layout/64x64.png" alt="" />
+          </a>
+          <div id="nav_profile" class="profile">
+            <img class="image" src="resources/images/layout/64x64.png" alt="" />
+            <p class="name">name </p>
+            <p class="email">mail</p>
+            <a class="logout" href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Side Bar-->
+    <div class="bzd-container">
+      <aside>
+        <div>
+          <ul>
+            <li>
+              <a>
+                <span class="material-icons-sharp"> dashboard </span>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="material-icons-sharp">map</span>
+                <p>Map</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="material-icons-sharp">android</span>
+                <p>Users</p>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="material-icons-sharp">chat_bubble</span>
+                <p>Chat</p>
+              </a>
+            </li>
+            <li>
+              <span class="material-icons-sharp">settings</span>
+              <p>Settings</p>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--Main-->
+      <main></main>
+    </div>
+  </body>
+
+  <script>
+    function clickProfile() {
+      //alert("Hello");
+      if (nav_profile.style.display === "block") {
+        nav_profile.style.display = "none";
+      } else {
+        nav_profile.style.display = "block";
+      }
+    }
+  </script>
+</html>
